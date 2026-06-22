@@ -1,0 +1,21 @@
+[bmscriptsbox]
+
+[bmscriptsbox.info]
+id = "f47ac10b-58cc-4372-a567-0e02b2c3d479"
+name = "计算稿纸"
+desc = "像打草稿一样计算 — 支持表达式实时计算、求和、求平均值、百分比计算"
+version = "1.0.0"
+icon = "./logo.png"
+
+[bmscriptsbox.runtime]
+language = "node.js"
+language_version = ">=16"
+entry = "main.js"
+terminal = "never"
+
+[bmscriptsbox.triggers.shortcut]
+enabled = true
+
+[bmscriptsbox.triggers.context_menu]
+enabled = true
+targets = ["background"]

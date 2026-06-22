@@ -1,0 +1,8 @@
+{
+  "name": "bm-scripts-calc",
+  "version": "1.2.1",
+  "description": "像打草稿一样计算 — 支持表达式实时计算、求和、求平均值、百分比计算",
+  "main": "main.js",
+  "author": "muwoo",
+  "license": "MIT"
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png">
+  <title>计算稿纸</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    window.rubick = window.rubick || {
+      isMacOs: function() { return navigator.platform.indexOf('Mac') !== -1 },
+      copyText: function(text) {
+        try { navigator.clipboard.writeText(text); } catch (e) {
+          var ta = document.createElement('textarea');
+          ta.value = text; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+          document.body.appendChild(ta); ta.select();
+          document.execCommand('copy'); document.body.removeChild(ta);
+        }
+      },
+      onPluginEnter: function() {}
+    };
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
